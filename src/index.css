@@ -1,0 +1,103 @@
+/* src/index.css */
+
+/* Tailwind v4 */
+@import "tailwindcss";
+
+@theme {
+  /* VARIABLES DE COLOR */
+  --color-portfolio-dark: #1a1a1a;
+  --color-portfolio-grey: #242424;
+  --color-portfolio-accent: #ff4c4c;
+  
+  /* VARIABLES DE FUENTE */
+  --font-playfair: "Playfair Display", serif;
+  --font-poppins: "Poppins", sans-serif;
+
+  /* MOTORES DE ANIMACIÓN NATIVOS PARA TAILWIND */
+  --animate-tech-marquee: tech-marquee 30s linear infinite;
+  --animate-glitch: subtle-glitch 5s infinite;
+  --animate-glitch-delayed: subtle-glitch 7s infinite 2s;
+  --animate-flicker: flicker 2.5s infinite;
+  --animate-violent-shake: violent-shake 0.2s infinite;
+  --animate-text-glitch-severe: text-glitch-severe 0.2s infinite;
+  --animate-matrix-scroll: matrix-scroll 30s linear infinite;
+  --animate-micro-jitter: micro-jitter 0.15s infinite linear;
+}
+
+@layer base {
+  /* Bloqueo estricto de desbordamiento horizontal para navegadores móviles */
+  html, body {
+    overflow-x: hidden;
+    width: 100vw;
+    max-width: 100%;
+    position: relative;
+  }
+  
+  body {
+    @apply bg-portfolio-dark text-white font-poppins antialiased;
+  }
+}
+
+/* KEYFRAMES (Lógica de los motores) */
+
+@keyframes tech-marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes subtle-glitch {
+  0%, 100% { opacity: 1; }
+  92% { opacity: 1; transform: translateX(0); }
+  93% { opacity: 0.4; transform: translateX(-1px); }
+  94% { opacity: 0.9; transform: translateX(1px); }
+  95% { opacity: 0.2; transform: translateX(0); }
+  96% { opacity: 0.8; }
+}
+
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    opacity: 0.9;
+    text-shadow: 0 0 2px rgba(120,0,0,0.4);
+  }
+  20%, 24%, 55% {
+    opacity: 0.4;
+    text-shadow: none;
+  }
+}
+
+@keyframes violent-shake {
+  0%, 100% { transform: translateX(0) translateY(0); }
+  20% { transform: translateX(-1px) translateY(1px); }
+  40% { transform: translateX(1px) translateY(-1px); }
+  60% { transform: translateX(-1px) translateY(-1px); }
+  80% { transform: translateX(1px) translateY(1px); }
+}
+
+@keyframes text-glitch-severe {
+  0% { text-shadow: 2px 0 red, -2px 0 blue; transform: translate(0); }
+  20% { text-shadow: -2px 0 red, 2px 0 blue; transform: translate(-2px, 1px); }
+  40% { text-shadow: 2px 0 red, -2px 0 blue; transform: translate(2px, -1px); }
+  60% { text-shadow: -2px 0 red, 2px 0 blue; transform: translate(-1px, 2px); }
+  80% { text-shadow: 2px 0 red, -2px 0 blue; transform: translate(1px, -2px); }
+  100% { text-shadow: -2px 0 red, 2px 0 blue; transform: translate(0); }
+}
+
+@keyframes matrix-scroll {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+
+@keyframes micro-jitter {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(-1px, 1px); }
+  50% { transform: translate(1px, -1px); }
+  75% { transform: translate(-1px, -1px); }
+  100% { transform: translate(1px, 1px); }
+}
+
+/* CAPAS DE TEXTURA (UTILIDADES PERSONALIZADAS) */
+
+@utility bg-static {
+  background-image: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255, 0, 0, 0.05) 2px, rgba(255, 0, 0, 0.05) 4px);
+  background-size: 100% 4px;
+}
