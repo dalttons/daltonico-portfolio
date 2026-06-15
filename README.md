@@ -24,7 +24,7 @@ If you wish to run this project in your local environment:
 
 1. Clone the repository:
 \`\`\`bash
-git clone https://github.com/dalttons/your-repo.git
+git clone https://github.com/dalttons/daltonico-portfolio.git
 \`\`\`
 
 2. Install dependencies:
