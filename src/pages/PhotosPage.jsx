@@ -5,7 +5,7 @@ const photosData = [
   { id: 2, src: "/photos/foto2.webp", alt: "Flower", span: "wide" },
   { id: 3, src: "/photos/foto3.webp", alt: "Folfdog", span: "single" }, 
   { id: 4, src: "/photos/foto4.webp", alt: "Edit", span: "single" },
-  { id: 5, src: "/photos/foto5.webp", alt: "Ter", span: "full" },
+  { id: 5, src: "/photos/foto5.webp", alt: "Tree", span: "full" },
   { id: 6, src: "/photos/foto6.webp", alt: "Mantis", span: "single" }, 
   { id: 7, src: "/photos/foto7.webp", alt: "Apple Blossom", span: "single" },
   { id: 8, src: "/photos/foto8.webp", alt: "Lighthouse", span: "tall" },
@@ -25,8 +25,11 @@ const photosData = [
 
   { id: 21, src: "/photos/foto21.webp", alt: "Me", span: "tall" },
   { id: 22, src: "/photos/foto22.webp", alt: "Hausehaunted House", span: "wide" },
-  { id: 23, src: "/photos/foto23.webp", alt: "Iguana", span: "single" },
+  { id: 23, src: "/photos/foto23.webp", alt: "Me", span: "single" },
   { id: 24, src: "/photos/foto24.webp", alt: "Me", span: "single" },
+  { id: 25, src: "/photos/foto25.webp", alt: "Iguana", span: "single"},
+  { id: 26, src: "/photos/foto26.webp", alt: "book", span: "single"},
+  { id: 27, src: "/photos/foto27.webp", alt: "draw", span: "single"},
 
 ];
 

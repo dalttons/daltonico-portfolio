@@ -15,27 +15,37 @@ const projectsData = [
     description: "Hace un tiempo estaba postulando a un trabajo en una agencia de marketing, donde se requería un diseñador gráfico. Hablé con ellos y querían ver mi portafolio (No tenía xd). Entonces, para demostrar mis habilidades, creé este portafolio que recrea la interfaz del sistema operativo Windows 95, pues el contratista parecía mayor y quería jugar con su nostalgia. Lo terminé en un par de horas, ya que me topé con el trabajo de @alishirani1384, quien logró recrear una interfaz muy fiel a la de dicho sistema.",
     image: "/code/win95.webp", 
     stack: ["JavaScript", "CSS", "HTML5", "React", "TypeScript"],
-    liveUrl: "https://dalt-portafoliooo.vercel.app/",
-    githubUrl: "https://github.com/dalttons/DaltPortafoliooo",
+    liveUrl: "https://windows1995.vercel.app/",
+    githubUrl: "https://github.com/dalttons/Windows-95-Portfolio",
   },
   {
     id: 2,
     title: "Intercambio",
     description: "----------------------",
     image: "/code/",
-    stack: ["React", "MySQL", "JavScript", "JWT", "Tailwind"],
+    stack: ["React", "MySQL", "JavaScript", "JWT", "Tailwind"],
     liveUrl: "",
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/dalttons",
   },
   {
     id: 3,
     title: "Romantic Letter",
-    description: "------------------",
+    description: "Una carta romántica interactiva creada con tecnologías web. Incluye animación de apertura, música de fondo, confeti cayendo, burbujas flotantes y un frasco lleno de dulces notas para una sorpresa única e inolvidable.",
     image: "/code/RomanticLetter.webp", 
-    stack: ["HTML5", "CSS Animations", "JavaScript"],
-    liveUrl: "https://",
-    githubUrl: "",
+    stack: ["HTML5", "CSS Animations"],
+    liveUrl: "https://romanticletter.vercel.app/",
+    githubUrl: "https://github.com/dalttons/Romantic-Letter",
   },
+  {
+    id: 4,
+    title: "Asistente Local con IA",
+    description: "Prototipo de asistente local con IA para dispositivos de bajos recursos usando Python, llama cpp, qwen y powershell",
+    image: "/code/AsistenteLocal.webp",
+    stack: ["Python", "llama_cpp", "Qwen"],
+    liveUrl: "",
+    githubUrl: "https://github.com/dalttons/local-assistant-with-AI",
+
+  }
 ];
 
 const CodePage = () => {
