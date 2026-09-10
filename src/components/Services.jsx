@@ -15,6 +15,7 @@ const techStack = [
   { name: 'GIMP', iconPath: '/icons/gimp.svg' },
   { name: 'Illustrator', iconPath: '/icons/illustrator.svg' },
   { name: 'Capcut', iconPath: '/icons/capcut.svg' },
+  { name: 'Afeter Effects', iconPath: '/icons/after-effects.svg' },
 ];
 
 const skillsData = [

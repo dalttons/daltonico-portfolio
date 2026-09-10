@@ -13,9 +13,9 @@ const InstagramIcon = () => (
   </svg>
 );
 
-const FacebookIcon = () => (
+const LinkedInIcon = () => (
   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-    <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V8.999h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.604 0 4.267 2.372 4.267 5.455v6.287zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.119 20.452H3.555V8.999h3.564v11.453zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
   </svg>
 );
 
@@ -63,7 +63,7 @@ const Navbar = () => {
         onClick={(e) => handleNavClick(e, 'home')} 
         className="font-playfair text-xl font-bold tracking-tight text-white hover:text-portfolio-accent transition-colors duration-300 cursor-pointer"
       >
-        Daltónico
+        Daijo.dev
       </a>
       
       <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
@@ -81,8 +81,8 @@ const Navbar = () => {
         <a href="https://www.instagram.com/marshadoow/" target="_blank" rel="noopener noreferrer" title="Instagram" className="hover:text-portfolio-accent transition-colors duration-300">
           <InstagramIcon />
         </a> 
-        <a href="https://www.facebook.com/dalton.ouchurus" target="_blank" rel="noopener noreferrer" title="Facebook" className="hover:text-portfolio-accent transition-colors duration-300">
-          <FacebookIcon />
+        <a href="https://www.linkedin.com/in/dalttons/" target="_blank" rel="noopener noreferrer" title="LinkedIn" className="hover:text-portfolio-accent transition-colors duration-300" >
+        <LinkedInIcon />
         </a>
       </div>
     </nav>
